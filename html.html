@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>CatPhotoApp</title>
+  </head>
+
+  <body class="body-background">
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet" type="text/css">
+    <style>
+      :root {
+        --list-background: white;
+        --list-textcolor: brown;
+        --list-fontfamily: 'Lobster Two';
+        --myborder-radius: 5px;
+        --myborder-line: solid 2px brown;
+      }
+      .red-text {
+        color: red;
+      }
+      .dark-text {
+        color: darkcyan !important;
+      }
+      p {font-size: 16px;
+      }
+      h2 {font-family: Lobster, monospace;
+      }
+      .smaller-image {
+        width: 100px;
+        border-radius: 50%;
+      }
+      .thick-green-border {
+        border-color: burlywood;
+        border-width: 10px;
+        border-style: ridge;
+        /*border-radius: 10px;*/
+      }
+      .List {
+        font-family: var(--list-fontfamily, sans-serif) !important;
+        background-color: var(--list-background, whitesmoke) !important;
+        color: var(--list-textcolor, darkcyan) !important;
+        border-style: var(--myborder-line);
+        border-radius: var(--myborder-radius);
+        padding: 20px;
+        margin-bottom: 5px;
+      }
+      .silver-background {
+        background-color: silver;
+        padding: 10px 5px 10px 5px; 
+      }
+      .body-background {
+        background-color: teal;
+      }
+      #cat-photo-form {
+        background-color: wheat;
+      }
+      [type='checkbox'] {
+        margin: 10px 0px 15px 0px
+      }
+      .header-style {
+        text-align: center;
+        text-transform:uppercase;
+        background-color: wheat;
+        border-color: olive;
+        border-top-color: coral;
+        border-top-style: solid;
+        border-radius: 5px;
+        margin: -10px;
+        margin-top: -10px;
+        padding: 20px;
+      }
+      #link1 {
+        font-size: 25px;
+        border-color: lightsalmon;
+        border-style:var(--myborder-line);
+        background-color:tan;
+        background-blend-mode: soft-light;
+        box-shadow: 0 10px 20px rgba(36, 1, 1, 0.3), 0 6px 6px rgba(0, 0, 0, 0.29);
+      }
+      #link1:hover {
+        background-color: rgba(12, 185, 21, 0.15);
+        color: whitesmoke;
+      }
+     /* #Top-content {
+        backface-visibility: visible;
+        background-blend-mode: darken;
+        background-color: khaki;
+      } */
+
+    </style>
+
+    <h2 class="red-text dark-text header-style">CatPhotoApp</h2>
+
+    <!--hr style="margin-bottom: 20px;"-->
+
+    <main>
+      <div id="Top-content">
+        <p style="font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Click here to view more <a id=link1 href="#">cat photos.</a></p>
+
+       <a href="#"><img class= "smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+      </div>
+        <div class="List">
+          <p>Things cats <strong><em>love</em></strong></p>
+          <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+          </ul>
+          <p>Top 3 things cats <s>hate</s>:</p>
+          <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+          </ol>
+        </div>
+
+      <form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">
+        <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+        <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+        <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+        <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

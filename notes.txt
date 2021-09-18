@@ -1,0 +1,19 @@
+text-decoration = underline with <u> tag
+text-decoration = strikethrough with <s> tag
+text-weight - Bold a text with <strong> tag
+font-weight - set how thich is a font or text (e.g 400)
+font-size - Set Size of text elements (72px=big & 32px=medium/small)
+font-style - Italize a Text with <em> tag
+<hr> - add horizontal Line 
+line-height - Add vertical spaces between text lines (px)
+box-shadow property - adds shadow to elements
+text-transform - Property for swithching between uppercase, lowercase, Capitalize or Initialize
+
+css positioning = relative , fixed or absolute
+position - used in changing elements position relative to its current position
+
+--------------------
+pseudo-codes
+--------------------
+- :hover - use to set a property when the element is hovered upon
+    e.g a:hover {color: red;} sets the color of the link to red when hovered upon.
