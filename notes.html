@@ -5,10 +5,20 @@
         <link rel="stylesheet" href="https://fonts.googleapos.com/css?family=Abril Fatface" type="text/css" >
         <link rel="stylesheet" href="https://fonts.googleapos.com/css?family=Ubuntu" type="text/css" >
         <style>
+            a:hover {
+                color: red
+            }
+
+
             /* This are CSS class selector */
+
+            .body{
+                padding: 20px 5px 20px 5px;
+            }
             .blue-text { 
                 color: darkslategrey;
                 padding: 5px 5px 5px 5px;
+                text-align: center;
 
             }
             .dark-grey {color: goldenrod;
@@ -22,11 +32,19 @@
                 background-color: indigo;
                 color: whitesmoke;
                 font-family: ubuntu;
+                border-radius: 4px;
+                padding: 7px 5px 7px 5px;
+                box-shadow: 0px 3px 10px grey, 0px 6px 15px dimgray;
+                line-height: 25px;
+            }
+
+            #introduction {
+                text-align: left;
             }
 
             /* THis is a CSS attribute Selector*/
             [type="radio"] {
-                margin: 10px 5px 10px 5px;
+                margin: 7px 5px 10px 5px;
             }
 
             /*THis is a Class selector USing variables*/
@@ -39,70 +57,75 @@
         </style>
     </head>
     <body>
-        <h1 class="blue-text"> Udacity HTML Notes</h1>
+        <div class="body">
+            <h1 class="blue-text"> Udacity HTML Notes</h1>
 
-        <p> 
-            This is a where i jot down all <em>Important</em> aspect of this learning journey
-        </p>
+            <p> 
+                This is where i jot down all <em>Important</em> aspect of this learning journey
+            </p>
 
-        <p class="dark-grey"> 
-            <strong>What is a Markup in HTML?</strong>
-        </p>
-        <p>
-            A markup is a Code that tells the browser what the text on a web page should look like.
-        </p>
+            <p class="dark-grey"> 
+                <strong>What is a Markup in HTML?</strong>
+            </p>
+            <p>
+                A markup is a Code that tells the browser what the text on a web page should look like.
+            </p>
+            <hr>
 
-        <h2 class="blue-text"> Brief Self Introduction</h2>
-        <p> 
-            <img src="NOC-img.png" alt="profile avatar">
-            I am born on the 13<sup>th</sup> of May 2021, <br>
-            I studied mathematics in the univeristy where we do stuffs like "Log<sub>n</sub>" 
-        </p>
+            <h2 class="blue-text" id="introduction"> Brief Self Introduction</h2>
+            <p> 
+                <img src="NOC-img.png" alt="profile avatar">
+                I am born on the 13<sup>th</sup> of May 2021, <br>
+                I studied mathematics in the univeristy where we do stuffs like "Log<sub>n</sub>" 
+            </p>
 
-        <div id="list-contents">
+            <hr>
 
-            <h2 class="white-text"> This are list of some courses i enjoyed in the university </h2>
-            <ul>
-                <li>Computer programming</li>
-                <ol>
-                    <li>Programming with C++
-                    <li>Programming with Python
-                    <li>Fundamentals of Java
-                </ol>
-                <li>Linear Algebra 1&2</li>
-                <li>Differential Equations</li>
-                <li>Mathematical Methods</li>
-            </ul>
+            <div id="list-contents">
 
-        </div>
+                <h2 class="white-text"> This are list of some courses i enjoyed in the university </h2>
+                <ul>
+                    <li>Computer programming</li>
+                    <ol>
+                        <li>Programming with C++
+                        <li>Programming with Python
+                        <li>Fundamentals of Java
+                    </ol>
+                    <li>Linear Algebra 1&2</li>
+                    <li>Differential Equations</li>
+                    <li>Mathematical Methods</li>
+                </ul>
 
-        <form action="http://www.unilorin.edu.ng/">
-            I am going to ask you this.. Which of the courses below would you enroll for if you were given a scholarship opportunity?<br>
-            <label for="mathematics">
-                <input id="mathematics" type="radio" name="Courses" value="mathematics" checked>Mathematics
-            </label><br>
-            <label for="statistics">
-                <input id="statistics" type="radio" name="Courses" value="statistics">statistics
-            </label><br>
-            <label for="computer-science">
-                <input id="computer-science" type="radio" name="Courses" value="computer-science">Computer Studies
-            </label><br>
-            <p><em>be fair with your judgement :)</em></p>
-        </form>
+            </div>
 
-        <p>
-            Visit our school website <a href=https://www.unilorin.edu.ng/ target="_blank">unilorin.edu.ng</a> to check for suitable undergraduate/postgraduate courses or sign up using the link below <br>
-        </p>
-        <p>
-            <form action=https://www.unulorin.edu.ng/sign-up>
-                <input type="email" placeholder="Email address" required><br>
-                <input type="password" placeholder="Password" required><br>
-                <input type="submit" value="SIGN-UP" required><br>
+            <form action="http://www.unilorin.edu.ng/">
+                <p>I am going to ask you this.. Which of the courses below would you enroll for if you were given a scholarship opportunity?</p><br>
+                <label for="mathematics">
+                    <input id="mathematics" type="radio" name="Courses" value="mathematics" checked>Mathematics
+                </label><br>
+                <label for="statistics">
+                    <input id="statistics" type="radio" name="Courses" value="statistics">statistics
+                </label><br>
+                <label for="computer-science">
+                    <input id="computer-science" type="radio" name="Courses" value="computer-science">Computer Studies
+                </label><br>
+                <p><em>be fair with your judgement :)</em></p>
             </form>
-        </p>
-        <p>
-            This is a new paragraph to test tracking
-        </p>
+
+            <p>
+                Visit our school website <a href=https://www.unilorin.edu.ng/ target="_blank">unilorin.edu.ng</a> to check for suitable undergraduate/postgraduate courses or sign up using the link below <br>
+            </p>
+            <p>
+                <form action=https://www.unulorin.edu.ng/sign-up>
+                    <input type="email" placeholder="Email address" required><br>
+                    <input type="password" placeholder="Password" required><br>
+                    <input type="submit" value="SIGN-UP" required><br>
+                </form>
+            </p>
+            <p>
+                This is a new paragraph to test tracking
+            </p>
+        </div>
     </body>
 
 </html>
