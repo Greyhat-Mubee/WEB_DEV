@@ -2,43 +2,84 @@
 <html lang="en">
     <head>
         <title>My note</title>
+        <link rel="stylesheet" href="https://fonts.googleapos.com/css?family=Abril Fatface" type="text/css" >
+        <link rel="stylesheet" href="https://fonts.googleapos.com/css?family=Ubuntu" type="text/css" >
+        <style>
+            /* This are CSS class selector */
+            .blue-text { 
+                color: darkslategrey;
+                padding: 5px 5px 5px 5px;
+
+            }
+            .dark-grey {color: goldenrod;
+            }
+            .white-text {
+                color: var(--note-color2) white;
+            }
+
+            /* This is a CSS ID selector*/
+            #list-contents {
+                background-color: indigo;
+                color: whitesmoke;
+                font-family: ubuntu;
+            }
+
+            /* THis is a CSS attribute Selector*/
+            [type="radio"] {
+                margin: 10px 5px 10px 5px;
+            }
+
+            /*THis is a Class selector USing variables*/
+            .note {
+                --note-color1: purple;
+                --note-color2: White;
+                --note-color3: goldenrod;
+            }
+
+        </style>
     </head>
     <body>
-        <h1> Udacity HTML Notes</h1>
+        <h1 class="blue-text"> Udacity HTML Notes</h1>
 
         <p> 
             This is a where i jot down all <em>Important</em> aspect of this learning journey
         </p>
 
-        <strong>What is a Markup in HTML?</strong>
+        <p class="dark-grey"> 
+            <strong>What is a Markup in HTML?</strong>
+        </p>
         <p>
             A markup is a Code that tells the browser what the text on a web page should look like.
         </p>
 
-        <h2> Brief Self Introduction</h2>
+        <h2 class="blue-text"> Brief Self Introduction</h2>
         <p> 
             <img src="NOC-img.png" alt="profile avatar">
             I am born on the 13<sup>th</sup> of May 2021, <br>
             I studied mathematics in the univeristy where we do stuffs like "Log<sub>n</sub>" 
         </p>
 
-        <h2> This are list of some courses i enjoyed in the university </h2>
-        <ul>
-            <li>Computer programming</li>
-            <ol>
-                <li>Programming with C++
-                <li>Programming with Python
-                <li>Fundamentals of Java
-            </ol>
-            <li>Linear Algebra 1&2</li>
-            <li>Differential Equations</li>
-            <li>Mathematical Methods</li>
-        </ul>
+        <div id="list-contents">
+
+            <h2 class="white-text"> This are list of some courses i enjoyed in the university </h2>
+            <ul>
+                <li>Computer programming</li>
+                <ol>
+                    <li>Programming with C++
+                    <li>Programming with Python
+                    <li>Fundamentals of Java
+                </ol>
+                <li>Linear Algebra 1&2</li>
+                <li>Differential Equations</li>
+                <li>Mathematical Methods</li>
+            </ul>
+
+        </div>
 
         <form action="http://www.unilorin.edu.ng/">
             I am going to ask you this.. Which of the courses below would you enroll for if you were given a scholarship opportunity?<br>
             <label for="mathematics">
-                <input id="mathematics" type="radio" name="Courses" value="mathematics">Mathematics
+                <input id="mathematics" type="radio" name="Courses" value="mathematics" checked>Mathematics
             </label><br>
             <label for="statistics">
                 <input id="statistics" type="radio" name="Courses" value="statistics">statistics
