@@ -4,55 +4,9 @@
         <title>My note</title>
         <link rel="stylesheet" href="https://fonts.googleapos.com/css?family=Abril Fatface" type="text/css" >
         <link rel="stylesheet" href="https://fonts.googleapos.com/css?family=Ubuntu" type="text/css" >
+        <link rel="stylesheet" href="notes.css" type="text/css" >
+        <meta charset=utf-8>
         <style>
-            a:hover {
-                color: red
-            }
-
-
-            /* This are CSS class selector */
-
-            .body{
-                padding: 20px 5px 20px 5px;
-            }
-            .blue-text { 
-                color: darkslategrey;
-                padding: 5px 5px 5px 5px;
-                text-align: center;
-
-            }
-            .dark-grey {color: goldenrod;
-            }
-            .white-text {
-                color: var(--note-color2) white;
-            }
-
-            /* This is a CSS ID selector*/
-            #list-contents {
-                background-color: indigo;
-                color: whitesmoke;
-                font-family: ubuntu;
-                border-radius: 4px;
-                padding: 7px 5px 7px 5px;
-                box-shadow: 0px 3px 10px grey, 0px 6px 15px dimgray;
-                line-height: 25px;
-            }
-
-            #introduction {
-                text-align: left;
-            }
-
-            /* THis is a CSS attribute Selector*/
-            [type="radio"] {
-                margin: 7px 5px 10px 5px;
-            }
-
-            /*THis is a Class selector USing variables*/
-            .note {
-                --note-color1: purple;
-                --note-color2: White;
-                --note-color3: goldenrod;
-            }
 
         </style>
     </head>
@@ -117,9 +71,20 @@
             </p>
             <p>
                 <form action=https://www.unulorin.edu.ng/sign-up>
-                    <input type="email" placeholder="Email address" required><br>
-                    <input type="password" placeholder="Password" required><br>
-                    <input type="submit" value="SIGN-UP" required><br>
+                    <div class="sign-up-box">
+                        <div class="sign-up-content">
+                            <div id="sign-up-email">
+                                <input type="email" placeholder="Email address" required><br>
+                            </div>
+                            <div id=sign-up-pass>
+                                <input type="password" placeholder="Password" required><br>
+                            </div>
+                        </div>
+                        <div class="sign-up-button">
+                            <input type="submit" value="SIGN-UP" required><br>
+                        </div>
+                    </div>
+                    
                 </form>
             </p>
             <p>

@@ -1,0 +1,84 @@
+a:hover {
+    color: red
+}
+
+/* This are CSS class selector */
+
+.body{
+    padding: 20px 5px 20px 5px;
+}
+.blue-text { 
+    color: darkslategrey;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+
+}
+.dark-grey {color: goldenrod;
+}
+.white-text {
+    color: var(--note-color2) white;
+}
+.sign-up-box {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    margin: 5px 0px 5px 5px;
+    box-shadow: 3px 5px 5px black;
+    background-color: rgb(135, 156, 250);
+    width:fit-content;
+}
+
+.sign-up-content {
+    padding: 4px 2px 4px 2px;
+    margin-bottom: 8px;
+}
+
+.sign-up-button {
+    box-shadow: 1px 3px 3px grey;
+    color: white;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    left: 25%;
+
+}
+
+/* This is a CSS ID selector*/
+#list-contents {
+    background-color: indigo;
+    color: whitesmoke;
+    font-family: ubuntu;
+    border-radius: 4px;
+    padding: 7px 5px 7px 5px;
+    box-shadow: 0px 3px 10px grey, 0px 6px 15px dimgray;
+    line-height: 25px;
+}
+#sign-up-email {
+    margin:3px 2px 0px 2px;
+    box-shadow: 0px 2px 5px dimgrey;
+}
+#sign-up-pass {
+    margin:3px 2px 0px 2px;
+    box-shadow: 0px 2px 5px dimgrey;
+}
+
+
+#introduction {
+    text-align: left;
+}
+
+/* THis is a CSS attribute Selector*/
+[type="radio"] {
+    margin: 7px 5px 10px 5px;
+}
+[type="submit"]:hover {
+    background-color:rgb(4, 58, 139);
+    color: white;
+}
+
+/*THis is a Class selector USing variables*/
+.note {
+    --note-color1: purple;
+    --note-color2: White;
+    --note-color3: goldenrod;
+}
