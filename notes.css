@@ -3,9 +3,66 @@ a:hover {
 }
 
 /* This are CSS class selector */
+.active {
 
+}
+.nav-item {
+   /* background-color: palevioletred; */
+    display: flex;
+    justify-content: space-around;
+   /* border: 1px solid white; */
+    padding: 1rem;
+
+}
+.nav-link {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+   /* border: 1px solid whitesmoke; */
+    border-radius: 20px;
+
+
+}
+.topbar {
+    width: 100%;
+    background-color:rgb(92, 14, 182);
+    position: fixed;
+    top:0%;
+    left:0%;
+
+}
+.nav-container {
+  /*  border: 1px solid red; */
+    border-radius: 20px;
+    width: fit-content;
+    position: relative;
+    left: 65%;
+
+}
+.logo-link-container {
+    width: 10%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    bottom: 15%;
+    right: 65%;
+    margin: 8px 5px 5px 5px;
+    border: 1px solid white;
+
+}
+.logo-link{
+    width:min-content
+}
 .body{
-    padding: 20px 5px 20px 5px;
+    
 }
 .blue-text { 
     color: darkslategrey;
@@ -25,6 +82,7 @@ a:hover {
     margin: 5px 0px 5px 5px;
     box-shadow: 3px 5px 5px black;
     background-color: rgb(135, 156, 250);
+    opacity: 0.6;
     width:fit-content;
 }
 
@@ -44,6 +102,9 @@ a:hover {
 }
 
 /* This is a CSS ID selector*/
+#logo-link{
+    size: inherit;
+}
 #list-contents {
     background-color: indigo;
     color: whitesmoke;
